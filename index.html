@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">BMI Calculator</h1>
+    </header>
+    <main class="container">
+        <div class="section">
+            <div class="sub-section">
+                <h2 class="subtitle">Sexe</h2>
+                <div class="sexe mini_section">
+                    <div class="male"><img src="images/male.svg.png" alt=""></div>
+                    <div class="swipe"></div>
+                    <input type="checkbox" class="check">
+                    <div class="female"><img src="images/female.svg.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h2 class="subtitle">Age</h2>
+                <div class=" age mini_section">
+                    <button class="increase-age"><i class="fas fa-plus-circle"></i></button>
+                    <div id="age">0</div>
+                    <button class="decrease-age"><i class="fas fa-minus-circle"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section">
+            <div class="sub-section">
+                <h2 class="subtitle">Height</h2>
+
+                <div class="height mini_section">
+                    <button class="increase-height"><i class="fas fa-plus-circle"></i></button>
+                    <div id="height">0.0
+                        <span>cm</span>
+                    </div>
+                    <button class="decrease-height"><i class="fas fa-minus-circle"></i></button>
+                </div>
+            </div>
+            <div class="sub-section">
+                <h2 class="subtitle">Weight</h2>
+                <div class="weight mini_section">
+                    <button class="increase-weight"><i class="fas fa-plus-circle"></i></button>
+                    <div id="weight">0.0<span>kg</span></div>
+                    <button class="decrease-weight"><i class="fas fa-minus-circle"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="section" id="result">
+            <button class="submit">Result</button>
+        </div>
+
+    </main>
+    <script src="logic.js"></script>
+</body>
+
+</html>
